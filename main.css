@@ -1,0 +1,305 @@
+body {
+box-sizing: border-box;
+font-family: 'Gaegu', cursive;
+}
+
+/* HEADING */ 
+
+header {
+    height: 200px;
+    padding: 1px; 
+    position: relative;
+}
+
+#headerInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #009900;
+    color: white;
+}
+
+#paragraphInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff00;
+    color: #000;
+}
+
+
+header h1 {
+    text-align: center;
+}
+
+#icon {
+    height:90px;
+    width: 90px;
+    border-radius: 50%;
+    position:absolute;
+    z-index: 1;
+    top: 70px;
+    right: 9px;
+}
+
+
+
+.parallax { 
+    background-image: url("FNP.jpg");
+    height: 500px; 
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#project-list {
+    margin-top: -20px;
+    color: #fff;
+    background-color: #303030;
+    width: 100vw;   
+    display: none;
+}
+
+
+#project-list ul li {
+    color: #fff;
+    text-decoration: none;
+}
+
+#project-list ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+#project-list ul li a:hover {
+    color:  #ffff00;
+    
+}
+
+#header-content:hover #project-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+/* MAIN CONTAINER */
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px 0 20px;
+}
+
+.column img {
+    height: 200px;
+    width: 350px;
+}
+
+.button {
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    background-color: #009900;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 1em;
+    width: 300px;
+    border: none;
+}
+
+.button:hover {
+  background-color: #ffff00;
+  color: #000;  
+}
+
+/* CREATING THE OVERLAY */
+
+
+.overlay {
+    position: fixed; 
+    display: none; 
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8); 
+    z-index: 2; 
+    cursor: pointer; 
+    color: #fff;
+    text-align: center;
+}
+
+.overlay img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: solid #fff 2px;
+    padding: 6px;
+    display: block;
+    margin: 0 auto;
+}
+
+.overlay h1, p {
+    text-align: center;
+}
+
+.cross {
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    
+}
+
+footer {
+    height: 100px;
+    background-color: #ffff00;
+    color: #000;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+footer p {
+    padding-top: 30px;
+}
+
+
+@media (min-width: 768px) {
+    
+/* HEADING */ 
+
+header {
+    height: 250px;
+    }
+    
+header h1 {
+    font-size: 3em;
+}
+
+header p {
+    font-size: 2em;
+}
+
+#icon {
+    height: 140px;
+    width: 140px;
+    top: 85px;
+    right: 30px;
+}
+    
+.parallax { 
+    height: 700px; 
+    width: 500px;
+   
+}
+    
+.column img {
+    height: 300px;
+    width: 600px;
+}
+
+.button {
+    font-size: 2em;
+    width: 600px;
+    height: 70px;
+}
+  
+#project-list ul li a {
+    font-size: 1.5em;
+}   
+    
+footer {
+    font-size: 2.5em;
+}
+
+footer p {
+    padding-top: 20px;
+}
+
+    
+}
+
+
+
+@media (min-width: 1025px) {
+      
+    
+/* HEADING */ 
+
+header {
+    height: 300px;
+    margin-bottom: 50px;
+    }
+    
+header h1 {
+    font-size: 4em;
+}
+
+header p {
+    font-size: 3em;
+}
+
+#icon {
+    height: 200px;
+    width: 200px;
+    top: 120px;
+    right: 30px;
+}
+    
+.parallax { 
+    height: 700px; 
+    width: 1000px;
+   
+}
+    
+.column img {
+    height: 300px;
+    width: 500px;
+}
+
+.button {
+    font-size: 2em;
+    width: 500px;
+    height: 100px;
+}
+  
+#project-list ul li a {
+    font-size: 2em;
+}      
+    
+
+/* MAIN CONTAINER */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    }
+    
+.row>* {
+        flex: 1 1 500px;
+    }
+ 
+    
+}
